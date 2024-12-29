@@ -968,7 +968,7 @@ function importCSV(file) {
 }
 
 // Function to handle file input for CSV import
-document.getElementById('csvInput').addEventListener('change', function (event) {
+document.getElementById('fileInput').addEventListener('change', function (event) {
     const file = event.target.files[0];
     if (file) {
         importCSV(file);
