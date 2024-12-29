@@ -33,6 +33,7 @@ color: black;
     background-color: grey;
     font-size: 16px;
     padding: 10px;
+    gap: 1rem;
     border-radius: 5%;
     left: 84%;
     
@@ -54,13 +55,7 @@ margin-bottom: 10px;
 } 
 
 
-.subnav:hover .subnavContents{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding-top: 30px;
-    align-items: flex-start;
-}
+
 
 .navsec{
     background-color: skyblue;
@@ -192,15 +187,6 @@ margin-bottom: 10px;
     text-align: center;
 }
 
-@media(hover:none){
-    .subnav:hover .subnavContents{
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        padding-top: 30px;
-        align-items: flex-start;
-    }
-}
 
 /*Navigation*/
 .nava{
