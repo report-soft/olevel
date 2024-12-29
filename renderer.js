@@ -978,7 +978,7 @@ function importCSV(file) {
 
         localStorage.setItem("object", JSON.stringify(data));
         readAll(); // Refresh the data display
-        
+        alert("Marksheet imported successfully!");
     };
     reader.readAsText(file);
 }
