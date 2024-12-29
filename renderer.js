@@ -938,6 +938,21 @@ function displayFilteredResults(filteredData) {
 readAll();
 
 
+//Function to display subnavContents//
+ function subnavBtn(){
+    const subnavContents = document.querySelector('.subnavContents');
+    subnavContents.style.display = "grid"
+ }
+
+ //close menu on clicking outside//
+ document.addEventListener('click', (event)=>{
+    const subnavBtn = document.querySelector('.subnavBtn');
+    const subnavContents = document.querySelector('.subnavContents');
+    if (!subnavContents.contains(event.target) && !subnavBtn.contains(event.target)){
+        subnavContents.style.display = "none"
+    }
+ })
+
 
 // Function to import data from CSV
 function importCSV(file) {
@@ -963,6 +978,7 @@ function importCSV(file) {
 
         localStorage.setItem("object", JSON.stringify(data));
         readAll(); // Refresh the data display
+        
     };
     reader.readAsText(file);
 }
